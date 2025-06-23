@@ -1,0 +1,29 @@
+/* Spinner.css */
+.spinner {
+  margin: 20px auto;
+  border: 6px solid rgba(100, 108, 255, 0.2); /* Lighter border for the track */
+  border-top: 6px solid #646cff;
+  border-right: 6px solid #646cff; /* Add secondary color for more visual interest */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 0.8s cubic-bezier(0.5, 0.1, 0.4, 0.9) infinite;
+  box-shadow: 0 0 10px rgba(100, 108, 255, 0.2); /* Soft glow effect */
+}
+
+@keyframes spin {
+  0% { 
+    transform: rotate(0deg); 
+    border-top-color: #646cff;
+    border-right-color: rgba(100, 108, 255, 0.5);
+  }
+  50% {
+    border-top-color: #8a90ff; /* Lighter shade for variation */
+    border-right-color: #646cff;
+  }
+  100% { 
+    transform: rotate(360deg); 
+    border-top-color: #646cff;
+    border-right-color: rgba(100, 108, 255, 0.5);
+  }
+}

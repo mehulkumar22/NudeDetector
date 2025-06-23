@@ -1,0 +1,42 @@
+.simple-result {
+  max-width: 600px;
+  margin: 1.5rem auto;
+  padding: 0 1rem;
+}
+
+.simple-result h4 {
+  color: #646cff;
+  margin-bottom: 0.8rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.dark .simple-result h4 {
+  color: #8a9cff;
+}
+
+.result-content {
+  background: rgba(248, 249, 250, 0.9);
+  padding: 1rem;
+  border-radius: 6px;
+  border: 1px solid #e0e0e0;
+}
+
+.dark .result-content {
+  background: rgba(42, 42, 42, 0.9);
+  border-color: #444;
+}
+
+.result-content pre {
+  margin: 0;
+  font-family: 'Consolas', 'Monaco', monospace;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  white-space: pre-wrap;
+  word-break: break-word;
+  color: #333;
+}
+
+.dark .result-content pre {
+  color: #e0e0e0;
+}

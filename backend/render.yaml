@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: nudity-detector-backend
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: SIGHTENGINE_USER
+        value: your_user
+      - key: SIGHTENGINE_SECRET
+        value: your_secret
+      - key: PICPURIFY_API_KEY
+        value: your_key
