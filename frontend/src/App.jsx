@@ -57,7 +57,7 @@ function App() {
     setIsLoading(true);
 
     try {
-      const res = await fetch('http://localhost:5000/detect-nudity', {
+      const res = await fetch('https://nudedetector-backend.onrender.com/detect-nudity', {
         method: 'POST',
         body: formData,
       });
