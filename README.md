@@ -2,7 +2,7 @@
 
 <p align="center">
   <b>A React web app for nudity detection using Sightengine & PicPurify APIs</b><br/>
-  Upload images, paste URLs, or drag & drop files. Modern UI with fast, multi-API moderation support.
+  Upload images or paste URLs. Modern UI with fast, multi-API moderation support.
 </p>
 
 <p align="center">
@@ -31,49 +31,92 @@ Check out the project here: [NudeDetector](https://nude-detector-pro.vercel.app)
 ## 📸 Screenshots
 
 <p align="center">
-  <img src="path_to_your_screenshot_folder/homepage.png" alt="NudeDetector Homepage" width="700"/>
+  <img src="frontend/public/screenshot 1.png" alt="Homepage" width="80%"/>
 </p>
 
 <p align="center">
-  <img src="path_to_your_screenshot_folder/upload-preview.png" alt="Image Upload and Preview" width="700"/>
+  <img src="frontend/public/screenshot 2.png" alt="Upload and Preview" width="80%"/>
 </p>
 
 <p align="center">
-  <img src="path_to_your_screenshot_folder/result-display.png" alt="Detection Result Display" width="700"/>
+  <img src="frontend/public/screenshot 3.png" alt="Detection Result" width="80%"/>
 </p>
+
+<p align="center">
+  <img src="frontend/public/screenshot 4.png" alt="API Selection" width="80%"/>
+</p>
+
+
+
+
 
 
 ## 📦 Installation
 
 1. **Clone the repository**
 
-```bash
+```
 git clone https://github.com/mehulkumar22/NudeDetector.git
 cd NudeDetector
+```
 
+2. **Install Frontend Dependencies**
+```
 cd frontend
 npm install
+```
 
+3. **Install Backend Dependencies**
+```
 cd ../backend
 npm install
-
-NudeDetector/
-├── backend/              # Express API backend
-│   ├── routes/           # API routes for detection
-│   └── uploads/          # Temporary image storage
-├── frontend/             # React frontend
-│   ├──src/          
-│     ├── components/       # UI components
-└── README.md
-
 ```
+
+4. **Project Structure**
+```
+NudeDetector/
+├── backend/               # Node.js + Express API backend
+│   ├── routes/            # API route handlers for moderation
+│   └── uploads/           # Temporary storage for uploaded images
+├── frontend/              # React frontend
+│   └── src/
+│       └── components/    # Reusable UI components
+└── README.md
+```
+5. **⚙️ Environment Variables**
+```
+PORT=5000
+
+# For Sightengine API
+SIGHTENGINE_API_USER=your_sightengine_api_user
+SIGHTENGINE_API_SECRET=your_sightengine_api_secret
+
+# For PicPurify API
+PICPURIFY_API_KEY=your_picpurify_api_key
+```
+
+▶️ Running the App
+
+1. **Start Backend Server**
+```
+cd backend
+npm start
+```
+
+2. **Start Frontend App**
+```
+cd frontend
+npm run dev
+```
+
+
 ## 📬 Contact Me
 
-Feel free to reach out for collaboration, feedback, or opportunities:
+I'm always open to collaboration, feedback, or exciting opportunities. Let’s connect!
 
-- 📧 Email: [mehulkumar.mk02@gmail.com](mailto:mehulkumar.mk02@gmail.com)  
-- 💼 LinkedIn: [linkedin.com/in/mehul-kumar-22](https://www.linkedin.com/in/mehul-kumar-22)  
-- 💻 GitHub: [github.com/mehulkumar22](https://github.com/mehulkumar22)
+- 📧 **Email:** [mehulkumar.mk02@gmail.com](mailto:mehulkumar.mk02@gmail.com)  
+- 💼 **LinkedIn:** [Mehul Kumar](https://www.linkedin.com/in/mehulkumar22)  
+- 💻 **GitHub:** [mehulkumar22](https://github.com/mehulkumar22)
 
 
 ## 🙌 Contributing
